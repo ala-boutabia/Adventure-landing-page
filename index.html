@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <!-- Font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ========== Start Header ========== -->
+    <header class="header" >
+        <div class="header-container">
+            <a class="nav-logo" href="index.html">
+                <h1>Adventure</h1>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Tours</a></li>
+                    <li><a href="#" class="nav-link">Events</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ========== Start Home ========== -->
+        <section class="home-container">
+            <div class="content">
+                <div class="info">
+                    <h1>Upcoming Events:</h1> 
+                    <h2 id="title">Skiing</h2>
+                    <p>Includes all phases of design, development and collaboration, until the completion of an event.</p>
+                </div>
+                <a class="cta" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="media-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="slider">
+                <div onclick="changeTitle(this.id)" id="0" class="slide "><img id="slide-img" onclick="changeBack(this.src)" src="assets/01.jpg" alt=""></div>
+                <div onclick="changeTitle(this.id)" id="1" class="slide "><img id="slide-img" onclick="changeBack(this.src)" src="assets/02.jpg" alt=""></div>
+                <div onclick="changeTitle(this.id)" id="2" class="slide active"><img id="slide-img" onclick="changeBack(this.src)" src="assets/03.jpg" alt=""></div>
+                <div onclick="changeTitle(this.id)" id="3" class="slide "><img id="slide-img" onclick="changeBack(this.src)" src="assets/04.jpg" alt=""></div>
+                <div onclick="changeTitle(this.id)" id="4" class="slide "><img id="slide-img" onclick="changeBack(this.src)" src="assets/05.jpg" alt=""></div>
+            </div>
+        </section>
+    <!-- End Home -->
+
+    <!-- ========== Upcoming events ========== -->
+    <section class="events-container">   
+        <div class="title">
+            <h2>Adventure Begins Here</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <img src="assets/safari.jpg" alt="">
+                    <h4>Safari</h4>
+                </div>
+                <a class="cta" href="#">Read More</a>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="assets/event-2.jpg" alt="">
+                    <h4>Cycling</h4>
+                </div>
+                <a class="cta" href="#">Read More</a>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="assets/event-3.jpg" alt="">
+                    <h4>Sailing</h4>
+                </div>
+                <a class="cta" href="#">Read More</a>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="assets/event-4.jpg" alt="">
+                    <h4>Hiking & Trekking</h4>
+                </div>
+                <a class="cta" href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Upcoming events -->
+
+    <!-- ========== Start Tours Section ========== -->
+    <section class="tours-section"> 
+        <div class="tours-title">
+            <div class="tours-info">
+                <h1>Our Tours</h1>
+                <h4>Capture the best moments</h4>
+
+                <div class="tours-places">
+                    <div class="cards">
+                        <div class="tour-card">
+                            <img src="assets/tour-1.jpg" alt="">
+                            <a class="card-cta" href="#">Round Trip London</a>
+                        </div>
+                        <div class="tour-card">
+                            <img src="assets/tour-2.jpg" alt="">
+                            <a class="card-cta" href="#">Italy In 5 Days</a>
+                        </div>
+                        <div class="tour-card">
+                            <img src="assets/tour-3.jpg" alt="">
+                            <a class="card-cta" href="#">Shanghai City Tours</a>
+                        </div>
+                        <div class="tour-card">
+                            <img src="assets/tour-4.jpg" alt="">
+                            <a class="card-cta" href="#">Full Day Tours</a>
+                        </div>
+                        <div class="tour-card">
+                            <img src="assets/tour-5.jpg" alt="">
+                            <a class="card-cta" href="#">City Breaks</a>
+                        </div>
+                        <div class="tour-card">
+                            <img src="assets/tour-6.jpg" alt="">
+                            <a class="card-cta" href="#">Combined Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Tours -->
+
+    <!-- ========== Start Footer ========== -->
+    <footer class="footer-container">
+        <div class="footer-cols">
+            <div class="col">
+                <h2>QUICK LINKS</h2>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Join The Team</a>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Our Cities</h2>
+                <div class="footer-links">
+                    <a href="#">Rome</a>
+                    <a href="#">Shanghai</a>
+                    <a href="#">Paris</a>
+                    <a href="#">London</a>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Our Services</h2>
+                <div class="footer-links">
+                    <a href="#">VIP Conciergerie</a>
+                    <a href="#">Lifestyle Management</a>
+                    <a href="#">Virtual Events</a>
+                    <a href="#">International Destinations</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
+
+
+    <!-- ========== Start Contact Us ========== -->
+    <section class="contact">        
+            <h2>CONTACT US</h2>
+            <div class="contact-infos">
+                <p><span>Phone Number:</span> +561 333 225</p>
+                <p><span>Email Adress:</span> contact@tour&adventure.com</p>
+                <p><span>Fax:</span> 414-230-556</p>
+            </div>
+    </section>
+    <div class="mark">
+        <p>© 2022 Tours & Events All Rights Reserved. </p>
+    </div>
+    <!-- ========== Start Contact Us ========== -->
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
